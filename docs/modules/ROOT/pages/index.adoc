@@ -10,13 +10,6 @@ The *training and data mining assertion* enables a human actor to provide a C2PA
 
 *Version 1.1 Draft 11 November 2024* · xref:_version_history[]
 
-IMPORTANT: The Creator Assertions Working Group expects to release an update to this specification late in 2024. This page is the working draft of that update. Until that time, implementers should refer to the xref:1.0@training-and-data-mining:ROOT:index.adoc[1.0 version of this specification].
-
-[#maintainers]
-*Maintainers:*
-
-* mailto:scouten@adobe.com[Eric Scouten] (https://adobe.com[Adobe])
-
 include::partial$license.adoc[]
 include::partial$contributing.adoc[]
 include::partial$foreword.adoc[]

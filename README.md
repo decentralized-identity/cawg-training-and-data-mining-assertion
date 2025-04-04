@@ -1,16 +1,21 @@
-# Creator Assertions Working Group Training and Data Mining Assertion
+# Creator Assertions Working Group :: Training and Data Mining Assertion
 
-This repository contains the source material for the current working draft of the [Creator Assertions Working Group](https://creator-assertions.github.io/)'s training and data mining assertion. A rendered version of this specification can be found [here](https://creator-assertions.github.io/training-and-data-mining/).
+This repository contains the source material for the current working draft of the [Creator Assertions Working Group](https://cawg.io/)'s training and data mining assertion. A rendered version of this specification can be found [here](https://cawg.io/training-and-data-mining/).
 
 ## Governance
 
-This specification is subject to the [Community Specification License 1.0](https://github.com/CommunitySpecification/1.0).
+This specification is subject to:
+
+* The W3C Patent Policy (2004) as described in the [license.md](./license.md) file.
+* The DIF [Code of Conduct](https://bit.ly/DIF_code_of_conduct).
+* The DIF [CAWG Charter](https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_charter_v1.pdf).
+* The DIF [CAWG Operating Addendum](https://github.com/decentralized-identity/org/blob/main/Org%20documents/WG%20documents/DIF_CAWG_WG_Operating_Addendum_v1.pdf).
 
 ## Site build process
 
 The site content is built using [Antora](https://antora.org), which takes Asciidoc (.adoc) plain text files and renders them to HTML and other formats.
 
-The primary content of this document is available in [docs/modules/ROOT/pages/index.adoc](https://github.com/creator-assertions/training-and-data-mining-assertion/blob/main/docs/modules/ROOT/pages/index.adoc) in this repo.
+The primary content of this document is available in [docs/modules/ROOT/pages/index.adoc](https://github.com/decentralized-identity/cawg-training-and-data-mining-assertion/blob/main/docs/modules/ROOT/pages/index.adoc) in this repo.
 
 ## Local preview
 
