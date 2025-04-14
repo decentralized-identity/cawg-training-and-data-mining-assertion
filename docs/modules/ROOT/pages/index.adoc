@@ -8,7 +8,7 @@ The *link:https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specific
 
 The *training and data mining assertion* enables a human actor to provide a C2PA Manifest Consumer information about whether an asset with C2PA metadata may be used as part of a data mining or AI/ML training workflow.
 
-*Version 1.1 Draft 11 November 2024* · xref:_version_history[]
+*Version 1.1 Draft 14 April 2025* · xref:_version_history[]
 
 include::partial$license.adoc[]
 include::partial$contributing.adoc[]

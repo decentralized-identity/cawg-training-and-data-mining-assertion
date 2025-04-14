@@ -11,6 +11,10 @@ _This section is non-normative._
 
 * Promoted from pre-draft to draft status.
 
-*11 Nov 2024*
+*11 November 2024*
 
 * Fix inconsistency between schema and example in xref:_schema_and_example[xrefstyle=full]
+
+*14 April 2025*
+
+* Transition to DIF draft specification.
