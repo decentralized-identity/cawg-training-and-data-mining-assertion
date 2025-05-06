@@ -5,7 +5,8 @@ _This section is non-normative._
 
 *17 July 2024*
 
-* Started 1.1 pre-draft version of this specification, derived from the xref:1.0@training-and-data-mining:ROOT:index.adoc[1.0 version of this specification]. (xref:1.0@training-and-data-mining:ROOT:index.adoc#_version_history[Version history])
+* Started 1.1 pre-draft version of this specification, derived from the xref:1.0@training-and-data-mining:ROOT:index.adoc[1.0 version of this specification].
+(xref:1.0@training-and-data-mining:ROOT:index.adoc#_version_history[Version history])
 
 *22 July 2024*
 
@@ -13,8 +14,9 @@ _This section is non-normative._
 
 *11 November 2024*
 
-* Fix inconsistency between schema and example in xref:_schema_and_example[xrefstyle=full]
+* Fix inconsistency between schema and example in xref:_schema_and_example[xrefstyle=full].
 
 *14 April 2025*
 
 * Transition to DIF draft specification.
+=
