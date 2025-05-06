@@ -1,0 +1,3 @@
+The *link:https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html[C2PA technical specification]* allows actors in a workflow to make cryptographically signed assertions about the produced C2PA asset.
+
+The *training and data mining assertion* enables a human actor to provide a C2PA Manifest Consumer information about whether an asset with C2PA metadata may be used as part of a data mining or AI/ML training workflow.

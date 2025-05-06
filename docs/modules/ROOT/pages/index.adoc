@@ -4,86 +4,22 @@
 :sectanchors:
 :sectnums:
 
-The *link:https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html[C2PA technical specification]* allows actors in a workflow to make cryptographically signed assertions about the produced C2PA asset.
-
-The *training and data mining assertion* enables a human actor to provide a C2PA Manifest Consumer information about whether an asset with C2PA metadata may be used as part of a data mining or AI/ML training workflow.
+include::partial$abstract.adoc[]
 
 *Version 1.1 Draft 14 April 2025* · xref:_version_history[]
 
-include::partial$license.adoc[]
-include::partial$contributing.adoc[]
-include::partial$foreword.adoc[]
-include::partial$toc.adoc[]
+include::partial$common/license.adoc[]
 
-== Introduction
+include::partial$common/contributing.adoc[]
 
-_This section is non-normative._
+include::partial$common/foreword.adoc[]
 
-== Normative references
+include::partial$common/toc.adoc[]
 
-* https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html[C2PA technical specification, version 2.0]
+include::partial$introduction.adoc[]
 
-== Assertion definition
+include::partial$normative-references.adoc[]
 
-=== Overview
-
-This assertion enables a human actor to provide a Manifest Consumer information about whether the asset may be used as part of a data mining or AI/ML training workflow. This is expressed in the assertion through a map of one or more `training-mining-entries`. Each entry describes whether its use is `allowed`, `notAllowed`, or `constrained`.
-
-There are four pre-defined entries:
-
-`cawg.data_mining`::
-Can any text or data content be extracted from the asset for purposes of determining “patterns, trends, and correlations.”
-+
-NOTE: This would include images containing text, where the text could be extracted via OCR.
-
-`cawg.ai_inference`::
-Can the asset be used as input to a trained AI/ML model for the purposes of _inferring_ a result.
-
-`cawg.ai_generative_training`::
-Can the asset be used as training data to an AI/ML model that could generate assets.
-
-`cawg.ai_training`::
-Can the asset be used as data to train non-generative AI/ML models, such as those used for classification, object detection, etc.
-
-[NOTE]
-====
-`cawg.ai_generative_training` and `cawg.ai_training` are separate values because generative AI training enables new assets to be created from training assets, while other types, such as object detection, do not.
-====
-
-In addition to the pre-defined entries, a claim generator may also add their own custom keys, provided that they conform to the same syntax for _custom labels_ as defined in link:++https://c2pa.org/specifications/specifications/2.0/specs/C2PA_Specification.html#_labels++[Section 6.2, “Labels,” of the C2PA Technical Specification]. Labels beginning with the prefix `cawg.` are reserved for use in future versions of this specification and MUST NOT be assigned by any other claim generator.
-
-The value of `constrained` implies that permission is not unconditionally granted for this usage. Consumers of this content that wish to use the content in this way may wish to contact the actor which is the rights holder, author, or signer to get more info or obtain permission. In the absence of additional information, `constrained` shall be treated as equivalent to `notAllowed`. More details on the constraints may be provided in the `constraints_info` text field.
-
-NOTE: Some possible things that could be put into `constraints_info` include a well-known description of a license (e.g., link:https://creativecommons.org/[Creative Commons]), a URL to a policy file, or just some free text.
-
-A training and data mining assertion SHALL have a label of `cawg.training-mining`.
-
-[WARNING]
-.Notice to implementers of previous (C2PA 1.x) definition of this assertion
-====
-Implementers who are transitioning from the earlier definition of this assertion should pay special attention to label names.
-
-The link:++https://c2pa.org/specifications/specifications/1.4/specs/C2PA_Specification.html#_training_and_data_mining++[training and data mining assertion as defined in version 1.4 of the C2PA technical specification] used labels with the prefix `c2pa.` for the assertion itself and for the pre-defined `training-mining-map` entries.
-
-This specification is not a product of the C2PA itself, so it can not use the `c2pa.` prefix. Therefore, though structurally similar to the C2PA 1.x definition, the labels have been changed to `cawg.` in this specification.
-====
-
-=== Schema and example
-
-The https://datatracker.ietf.org/doc/html/rfc8610[CDDL Definition] for this type is:
-
-[source,cddl]
-----
-include::../partials/schemas/cddl/training-mining.cddl[]
-----
-
-IMPORTANT: A previous version of this specification inadvertently omitted the `entries` map from the CDDL definition. It SHOULD be used as documented in this version.
-
-An example in CBOR Diagnostic Format (`.cbordiag`) is shown below:
-
-[source,json]
-----
-include::../partials/schemas/cddl/examples/training-mining.cbordiag[]
-----
+include::partial$assertion-definition.adoc[]
 
 include::partial$version-history.adoc[]
