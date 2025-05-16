@@ -23,3 +23,7 @@ _This section is non-normative._
 *06 May 2025*
 
 * Working group approved as 1.1 final.
+
+*16 May 2025*
+
+* Ratified by DIF Steering Committee.

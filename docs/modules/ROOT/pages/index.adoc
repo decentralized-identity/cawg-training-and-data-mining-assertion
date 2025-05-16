@@ -6,7 +6,7 @@
 
 include::partial$abstract.adoc[]
 
-*Version 1.1 Working Group Approved 06 May 2025* · xref:_version_history[]
+*Version 1.1 DIF Ratified Specification 16 May 2025* · xref:_version_history[]
 
 include::partial$common/license.adoc[]
 
