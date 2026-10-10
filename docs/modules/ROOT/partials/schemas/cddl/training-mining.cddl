@@ -8,15 +8,15 @@ $training-mining-choice /= "constrained"
 
 ; Description of the data structure
 training-mining-map = {
-    "entries"    : $training-mining-entries-map
+    "entries"    : training-mining-entries-map
     ? "metadata" : $assertion-metadata-map ; additional information about the assertion
 }
 
 training-mining-entries-map = {
-    ? "cawg.data_mining"            : $training-mining-map-entry,       
-    ? "cawg.ai_inference"           : $training-mining-map-entry,       
-    ? "cawg.ai_training"            : $training-mining-map-entry,       
-    ? "cawg.ai_generative_training" : $training-mining-map-entry,
+    ? "cawg.data_mining"            : training-mining-map-entry,       
+    ? "cawg.ai_inference"           : training-mining-map-entry,       
+    ? "cawg.ai_training"            : training-mining-map-entry,       
+    ? "cawg.ai_generative_training" : training-mining-map-entry,
     * tstr => any ; allow for any other custom use case
 }
 
