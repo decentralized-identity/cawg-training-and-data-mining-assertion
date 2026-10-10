@@ -27,3 +27,7 @@ _This section is non-normative._
 *16 May 2025*
 
 * Ratified by DIF Steering Committee.
+
+*10 October 2026*
+
+* Fix undefined rule references in the CDDL definition, a syntax error in the CBOR diagnostic example, and the `constraint_info` field name in the prose.

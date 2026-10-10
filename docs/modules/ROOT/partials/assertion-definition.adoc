@@ -33,9 +33,9 @@ Labels beginning with the prefix `cawg.` are reserved for use in future versions
 The value of `constrained` implies that permission is not unconditionally granted for this usage.
 Consumers of this content that wish to use the content in this way may wish to contact the actor which is the rights holder, author, or signer to get more info or obtain permission.
 In the absence of additional information, `constrained` shall be treated as equivalent to `notAllowed`.
-More details on the constraints may be provided in the `constraints_info` text field.
+More details on the constraints may be provided in the `constraint_info` text field.
 
-NOTE: Some possible things that could be put into `constraints_info` include a well-known description of a license (e.g., link:https://creativecommons.org/[Creative Commons]), a URL to a policy file, or just some free text.
+NOTE: Some possible things that could be put into `constraint_info` include a well-known description of a license (e.g., link:https://creativecommons.org/[Creative Commons]), a URL to a policy file, or just some free text.
 
 A training and data mining assertion SHALL have a label of `cawg.training-mining`.
 
